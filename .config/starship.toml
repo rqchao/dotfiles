@@ -1,0 +1,51 @@
+format = """\
+[](bg:#656338 fg:#4682B4)\
+[](bg:#4682B4 fg:#FDF5E6)\
+[](fg:#4682B4 bg:#2C3E50)\
+$time\
+[](fg:#2C3E50 bg:#C0392b)\
+$directory\
+[](fg:#C0392b bg:#F1C40F)\
+$git_branch\
+$git_status\
+$git_metrics\
+[](fg:#F1C40F bg:#656338)\
+$character\
+"""
+
+[directory]
+format = "[ ﱮ $path ]($style)"
+style = "fg:#FDF5E6 bg:#C0392b"
+
+[git_branch]
+format = '[ $symbol$branch(:$remote_branch) ]($style)'
+symbol = "  "
+style = "fg:#2C3E50 bg:#F1C40F"
+
+[git_status]
+format = '[$all_status]($style)'
+style = "fg:#2C3E50 bg:#F1C40F"
+
+[git_metrics]
+format = "([+$added]($added_style))[]($added_style)"
+added_style = "fg:#2C3E50 bg:#F1C40F"
+deleted_style = "fg:bright-red bg:235"
+disabled = false
+
+[hg_branch]
+format = "[ $symbol$branch ]($style)"
+symbol = " "
+
+[cmd_duration]
+format = "[  $duration ]($style)"
+style = "fg:bright-white bg:18"
+
+[character]
+success_symbol = '[ ➜](bold green) '
+error_symbol = '[ ](#E84D44) '
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#1d2230"
+format = '[[  $time ](bg:#2C3E50 fg:#FDF5E6)]($style)'
