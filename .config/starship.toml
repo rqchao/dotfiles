@@ -1,5 +1,5 @@
 format = """\
-[](bg:#656338 fg:#4682B4)\
+[](fg:#4682B4)\
 [](bg:#4682B4 fg:#FDF5E6)\
 [](fg:#4682B4 bg:#2C3E50)\
 $time\
@@ -9,7 +9,7 @@ $directory\
 $git_branch\
 $git_status\
 $git_metrics\
-[](fg:#F1C40F bg:#656338)\
+[](fg:#F1C40F)\
 $character\
 """
 
