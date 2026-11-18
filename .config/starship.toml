@@ -1,6 +1,6 @@
 format = """\
 [](fg:#4682B4)\
-[](bg:#4682B4 fg:#FDF5E6)\
+[](bg:#4682B4 fg:#FDF5E6)\
 [](fg:#4682B4 bg:#2C3E50)\
 $time\
 [](fg:#2C3E50 bg:#C0392b)\
@@ -14,7 +14,7 @@ $character\
 """
 
 [directory]
-format = "[ ﱮ $path ]($style)"
+format = "[  $path ]($style)"
 style = "fg:#FDF5E6 bg:#C0392b"
 
 [git_branch]
@@ -37,7 +37,7 @@ format = "[ $symbol$branch ]($style)"
 symbol = " "
 
 [cmd_duration]
-format = "[  $duration ]($style)"
+format = "[  $duration ]($style)"
 style = "fg:bright-white bg:18"
 
 [character]
@@ -48,4 +48,4 @@ error_symbol = '[ ](#E84D44) '
 disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#1d2230"
-format = '[[  $time ](bg:#2C3E50 fg:#FDF5E6)]($style)'
+format = '[[  $time ](bg:#2C3E50 fg:#FDF5E6)]($style)'
