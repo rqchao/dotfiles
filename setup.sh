@@ -110,7 +110,7 @@ starship --version
 kitty --version
 
 log "Launching Kitty"
-open -a kitty
+open -na kitty
 
 printf '\nSetup complete. Open a new Kitty window to start a fresh login shell.\n'
 if [[ -d "$BACKUP_DIR" ]]; then
